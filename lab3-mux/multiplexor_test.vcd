@@ -1,0 +1,66 @@
+$date
+	Tue Mar 05 23:16:58 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module multiplexor_test $end
+$var wire 5 ! mux_out [4:0] $end
+$var parameter 32 " WIDTH $end
+$var reg 5 # in0 [4:0] $end
+$var reg 5 $ in1 [4:0] $end
+$var reg 1 % sel $end
+$scope module multiplexor_inst $end
+$var wire 5 & in0 [4:0] $end
+$var wire 5 ' in1 [4:0] $end
+$var wire 1 % sel $end
+$var parameter 32 ( WIDTH $end
+$var reg 5 ) mux_out [4:0] $end
+$upscope $end
+$scope task expect $end
+$var reg 5 * exp_out [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 (
+b101 "
+$end
+#0
+$dumpvars
+bx *
+b10101 )
+b0 '
+b10101 &
+0%
+b0 $
+b10101 #
+b10101 !
+$end
+#1
+b1010 !
+b1010 )
+b1010 #
+b1010 &
+b10101 *
+#2
+b10101 !
+b10101 )
+b10101 $
+b10101 '
+b0 #
+b0 &
+1%
+b1010 *
+#3
+b1010 !
+b1010 )
+b1010 $
+b1010 '
+b10101 *
+#4
+b1010 *

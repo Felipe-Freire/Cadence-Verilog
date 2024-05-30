@@ -1,0 +1,89 @@
+$date
+	Wed May  1 10:04:15 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_test $end
+$var wire 8 ! alu_out [7:0] $end
+$var wire 1 " a_is_zero $end
+$var reg 8 # in_a [7:0] $end
+$var reg 8 $ in_b [7:0] $end
+$var reg 3 % opcode [2:0] $end
+$scope module alu_inst $end
+$var wire 8 & in_a [7:0] $end
+$var wire 8 ' in_b [7:0] $end
+$var wire 3 ( opcode [2:0] $end
+$var reg 1 " a_is_zero $end
+$var reg 8 ) alu_out [7:0] $end
+$upscope $end
+$scope task expect $end
+$var reg 8 * exp_out [7:0] $end
+$var reg 1 + exp_zero $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x+
+bx *
+b1000010 )
+b0 (
+b10000110 '
+b1000010 &
+b0 %
+b10000110 $
+b1000010 #
+0"
+b1000010 !
+$end
+#1
+b1 %
+b1 (
+b1000010 *
+0+
+#2
+b11001000 !
+b11001000 )
+b10 %
+b10 (
+#3
+b10 !
+b10 )
+b11 %
+b11 (
+b11001000 *
+#4
+b11000100 !
+b11000100 )
+b100 %
+b100 (
+b10 *
+#5
+b10000110 !
+b10000110 )
+b101 %
+b101 (
+b11000100 *
+#6
+b1000010 !
+b1000010 )
+b110 %
+b110 (
+b10000110 *
+#7
+b111 %
+b111 (
+b1000010 *
+#8
+b0 !
+b0 )
+1"
+b0 #
+b0 &
+#9
+b0 *
+1+
